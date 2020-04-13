@@ -2,23 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  }
 body {
   background: url('../images/bg.jpg') no-repeat top center;
   line-height: 1.15;
-}
+  }
 header {
   position: relative;
   height: 1.25rem;
-  background: url('../images/head_bg.png') no-repeatz;
+  background: no-repeat url('../images/head_bg.png');
   background-size: 100% 100%;
-}
+  }
 header h1 {
   font-size: 0.475rem;
   color: #fff;
   text-align: center;
   line-height: 1rem;
-}
+  }
 header .showTime {
   position: absolute;
   right: 0.375rem;
@@ -26,22 +26,22 @@ header .showTime {
   line-height: 0.9375rem;
   font-size: 0.25rem;
   color: rgba(225, 225, 225, 0.7);
-}
+  }
 .mainbox {
   display: flex;
   min-width: 1024px;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0.125rem 0.125rem 0;
-}
+  }
 .mainbox .column {
   flex: 3;
-}
+  }
 .mainbox .column:nth-child(2) {
   flex: 5;
   margin: 0 0.125rem 0.1875rem;
   overflow: hidden;
-}
+  }
 .mainbox .panel {
   position: relative;
   padding: 0 0.1875rem 0.5rem;
@@ -49,7 +49,7 @@ header .showTime {
   margin-bottom: 0.1875rem;
   border: 1px solid rgba(25, 186, 139, 0.17);
   background: url('../images/line(1).png') rgba(225, 225, 225, 0.05);
-}
+  }
 .mainbox .panel::before {
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ header .showTime {
   border-top: 2px solid #02a6b5;
   border-left: 2px solid #02a6b5;
   content: '';
-}
+  }
 .mainbox .panel::after {
   position: absolute;
   top: 0;
@@ -69,13 +69,13 @@ header .showTime {
   border-top: 2px solid #02a6b5;
   border-right: 2px solid #02a6b5;
   content: '';
-}
+  }
 .mainbox .panel .panelfooter {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-}
+  }
 .mainbox .panel .panelfooter::before {
   position: absolute;
   bottom: 0;
@@ -85,7 +85,7 @@ header .showTime {
   border-bottom: 2px solid #02a6b5;
   border-right: 2px solid #02a6b5;
   content: '';
-}
+  }
 .mainbox .panel .panelfooter::after {
   position: absolute;
   bottom: 0;
@@ -95,7 +95,7 @@ header .showTime {
   border-bottom: 2px solid #02a6b5;
   border-left: 2px solid #02a6b5;
   content: '';
-}
+  }
 .mainbox .panel h2 {
   height: 0.6rem;
   color: #fff;
@@ -103,30 +103,30 @@ header .showTime {
   font-size: 0.25rem;
   font-weight: 400;
   text-align: center;
-}
+  }
 .mainbox .panel h2 a {
   color: #fff;
   text-decoration: none;
   margin: 0 0.125rem;
-}
+  }
 .mainbox .panel .chart {
   height: 3rem;
-}
+  }
 li {
   list-style: none;
-}
+  }
 @font-face {
   font-family: electronicFont;
   src: url('../font/DS-DIGIT.TTF');
-}
+  }
 .no {
   background: rgba(101, 132, 226, 0.1);
   padding: 0.1875rem;
-}
+  }
 .no .no-hd {
   position: relative;
   border: 1px solid rgba(25, 186, 139, 0.17);
-}
+  }
 .no .no-hd::before {
   content: '';
   position: absolute;
@@ -136,7 +136,7 @@ li {
   height: 10px;
   border-top: 2px solid #02a6b5;
   border-left: 2px solid #02a6b5;
-}
+  }
 .no .no-hd::after {
   content: '';
   position: absolute;
@@ -146,10 +146,10 @@ li {
   height: 10px;
   border-bottom: 2px solid #02a6b5;
   border-right: 2px solid #02a6b5;
-}
+  }
 .no .no-hd ul {
   display: flex;
-}
+  }
 .no .no-hd ul li {
   position: relative;
   flex: 1;
@@ -158,7 +158,7 @@ li {
   color: #ffef7b;
   text-align: center;
   font-family: 'electronicFont';
-}
+  }
 .no .no-hd ul li::after {
   position: absolute;
   content: '';
@@ -167,10 +167,10 @@ li {
   height: 50%;
   width: 1px;
   background: rgba(225, 225, 225, 0.2);
-}
+  }
 .no .no-bd ul {
   display: flex;
-}
+  }
 .no .no-bd ul li {
   flex: 1;
   text-align: center;
@@ -179,11 +179,11 @@ li {
   height: 0.5rem;
   line-height: 0.5rem;
   padding-top: 0.125rem;
-}
+  }
 .map {
   position: relative;
   height: 10.125rem;
-}
+  }
 .map .map1 {
   width: 6.475rem;
   height: 6.475rem;
@@ -194,7 +194,7 @@ li {
   background: url(../images/map.png);
   background-size: 100% 100%;
   opacity: 0.3;
-}
+  }
 .map .map2 {
   position: absolute;
   top: 50%;
@@ -206,7 +206,7 @@ li {
   background-size: 100% 100%;
   opacity: 0.6;
   animation: rotatel 15s linear infinite;
-}
+  }
 .map .map3 {
   position: absolute;
   top: 50%;
@@ -218,27 +218,38 @@ li {
   background-size: 100% 100%;
   opacity: 0.6;
   animation: rotate2 15s linear infinite;
-}
+  }
 .map .chart {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 10.125rem;
-}
+  }
 @keyframes rotatel {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
-  }
+    }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
-}
 @keyframes rotate2 {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
-  }
+    }
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
+    }
   }
-}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+    }
+  }
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+    }
+  }

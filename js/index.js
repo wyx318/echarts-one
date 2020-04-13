@@ -86,7 +86,7 @@
 })();
 //柱状图二
 (() => {
-    //声明颜色数组 进行配置  
+    //声明颜色数组 进行配置
     var myColor = ["#1089E7", "#F57474", "#56D0E3", "#F8B448", "#8B78F6"];
     // 1.实例化对象
     var myChart = echarts.init(document.querySelector('.bar1 .chart'))
@@ -104,12 +104,12 @@
             // boundaryGap: [0, 0.01]
             show: false
         },
-        // Y 轴 控制设置 
+        // Y 轴 控制设置
         yAxis: [{
             type: 'category',
             inverse: true,
             data: ['H5', 'CSS3', 'js', 'Vue', 'node'],
-            //Y轴线条 
+            //Y轴线条
             axisLine: {
                 show: false
             },
@@ -117,14 +117,14 @@
             axisTick: {
                 show: false
             },
-            // 刻度标签 里面的文字设置成白色 
+            // 刻度标签 里面的文字设置成白色
             axisLabel: {
                 color: '#fff'
             }
         }, {
             inverse: true,
             data: [702, 350, 610, 793, 664],
-            //Y轴线条 
+            //Y轴线条
             axisLine: {
                 show: false
             },
@@ -132,7 +132,7 @@
             axisTick: {
                 show: false
             },
-            // 刻度标签 里面的文字设置成白色 
+            // 刻度标签 里面的文字设置成白色
             axisLabel: {
                 color: '#fff'
             }
@@ -141,8 +141,8 @@
                 name: '条 ',
                 type: 'bar',
                 data: [70, 34, 60, 78, 69],
-                yAxisIndex: 0, //叠加两个柱子 
-                //修改第一组柱子的圆角 
+                yAxisIndex: 0, //叠加两个柱子
+                //修改第一组柱子的圆角
                 itemStyle: {
                     barBorderRadius: 20,
                     //此时的color可以修改柱子的颜色
@@ -166,9 +166,9 @@
             {
                 name: '框',
                 type: 'bar',
-                barCategoryGap: 50, //距离 
+                barCategoryGap: 50, //距离
                 barWidth: 15,
-                yAxisIndex: 1, //叠加两个柱子 
+                yAxisIndex: 1, //叠加两个柱子
                 data: [100, 100, 100, 100, 100],
                 itemStyle: {
                     color: 'none',
@@ -214,7 +214,7 @@
             trigger: 'axis'
         },
         legend: {
-            //如果  series 有name值 则legend可以不用写 
+            //如果  series 有name值 则legend可以不用写
             // data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎'],
             //图例组件
             textStyle: {
@@ -282,7 +282,7 @@
             {
                 name: '新增游客',
                 type: 'line',
-                smooth: true, //曲线圆滑度 
+                smooth: true, //曲线圆滑度
                 data: yearData[0].data[1]
             }
         ]
@@ -382,7 +382,7 @@
                 },
                 //填充区域
                 areaStyle: {
-                    // 渐变色 渐变固定设置  
+                    // 渐变色 渐变固定设置
                     color: new echarts.graphic.LinearGradient(
                         0,
                         0,
@@ -470,7 +470,7 @@
 //饼图1
 (() => {
 
-    //1.实例化对象 
+    //1.实例化对象
     var myChart = echarts.init(document.querySelector('.pie .chart'))
         //2.指定配置项和数据
     var option = {
@@ -878,7 +878,7 @@
             itemStyle: {
                 //地图省份的地理颜色
                 normal: {
-                    areaColor: 'rgba(20,41,87,0.8)',
+                    areaColor: 'rgba(20,41,87,0.5)',
                     borderColor: '#195BB9',
                     borderWidth: 1,
                 },
@@ -891,4 +891,8 @@
     };
     //3.将配置项挂载到实例上
     myChart.setOption(option);
+    //让图表跟随屏幕自适应
+    window.addEventListener('resize', () => {
+        myChart.resize()
+    })
 })()
